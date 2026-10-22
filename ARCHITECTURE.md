@@ -213,16 +213,16 @@ a background poller — lives in a plain module and is read through
 Copying state in an effect causes a cascading render, and the value is wrong for
 the whole first paint.
 
-| Module                      | Holds                                 | Consumer                  |
-| --------------------------- | ------------------------------------- | ------------------------- |
-| `wallet/session.ts`         | connected address, wallet id, network | `WalletProvider`          |
-| `wallet/transactions.ts`    | pending transaction list              | `TransactionsProvider`    |
-| `lib/yieldAlerts.ts`        | saved yield alerts                    | `YieldAlertProvider`      |
-| `lib/bondUtils.ts`          | bond yield-range filter               | `useBondFilters`          |
-| `hooks/useHorizonHealth.tsx` | Horizon reachability                 | `OfflineBanner`, `TopBar` |
-| `alerts/YieldAlertProvider.tsx` | yield alert store (external)     | `YieldAlertProvider`      |
-| `app/error.tsx`             | error boundary store                  | `ErrorBoundary`           |
-| `wallet/WalletProvider.tsx` | wallet session store                  | `WalletProvider`          |
+| Module                          | Holds                                 | Consumer                  |
+| ------------------------------- | ------------------------------------- | ------------------------- |
+| `wallet/session.ts`             | connected address, wallet id, network | `WalletProvider`          |
+| `wallet/transactions.ts`        | pending transaction list              | `TransactionsProvider`    |
+| `lib/yieldAlerts.ts`            | saved yield alerts                    | `YieldAlertProvider`      |
+| `lib/bondUtils.ts`              | bond yield-range filter               | `useBondFilters`          |
+| `hooks/useHorizonHealth.tsx`    | Horizon reachability                  | `OfflineBanner`, `TopBar` |
+| `alerts/YieldAlertProvider.tsx` | yield alert store (external)          | `YieldAlertProvider`      |
+| `app/error.tsx`                 | error boundary store                  | `ErrorBoundary`           |
+| `wallet/WalletProvider.tsx`     | wallet session store                  | `WalletProvider`          |
 
 ### Wallet vs sign-in session
 
